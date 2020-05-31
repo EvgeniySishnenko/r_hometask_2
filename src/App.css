@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 20px auto;
+}
+.item-filter-btn {
+  border: 1px solid gray;
+  outline: none;
+  background-color: white;
+  color: gray;
+  margin-left: 5px;
+  padding: 4px 7px;
+}
+
+.item-filter-btn:hover {
+  background-color: gray;
+  color: white;
+}
+.cnt-list {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.cnt-item {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.header-nav {
+  margin-top: 16px;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s ease-out;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #00ec9a;
+}
+.App-header {
+  background-color: #00054d;
+  padding: 30px 0 10px;
+}
+.h1-title {
+  color: #00ec9a;
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex .card {
+  width: 30%;
+}
+.flex img {
+  display: block;
+  width: 100%;
+}
+.card {
+  margin-bottom: 10px;
+}
+.column {
+  display: block;
+}
+.column .card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.column img {
+  display: block;
+  width: 200px;
+}
