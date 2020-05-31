@@ -8,9 +8,9 @@ function Store() {
     vue: "flex",
   });
   const toggleClass = (e, setItem) => {
-    console.log(e.target.dataset.attr);
-
-    if (e.target.dataset.attr === "view_list") {
+    const elem = document.querySelector(".list");
+    // if (e.target.dataset.attr === "view_list") {
+    if (elem.classList.contains("flex")) {
       setItem({
         icon: "view_module",
         vue: "column",

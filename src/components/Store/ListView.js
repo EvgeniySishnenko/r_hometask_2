@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function ListView(props) {
   const { items, vue } = props;
   return (
-    <div className="list" className={vue}>
+    <div className={`list ${vue}`}>
       {Object.values(items).map((a) => (
         <ShopItem items={a} />
       ))}
