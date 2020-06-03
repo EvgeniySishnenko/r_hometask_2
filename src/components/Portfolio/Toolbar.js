@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 function Toolbar(props) {
   const { filters, selected } = props;
+  console.log(selected);
 
   const onSelectFilter = (e) => {
     props.onSelectFilter(e.target.dataset.attr);
@@ -15,7 +16,7 @@ function Toolbar(props) {
               data-attr={a}
               onClick={onSelectFilter}
               key={a}
-              className="item-filter-btn"
+              className={`item-filter-btn ${selected == a ? "active" : ""} `}
             >
               {a}
             </button>
